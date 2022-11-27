@@ -33,7 +33,15 @@
 //    }
 // }
 
-function sendRequest(name, phone, address, goods, sum) {
+function sendRequest(name, phone, address, goods, sum); 
+
+ //   name: "Иван", 
+ //   phone: "+7(987)65-43-210", 
+ //   address: {street: "ул. Ленина", house: "дом 2", entrance: "4 подъезд", floor: "5 этаж", flat: "53"}, 
+ //   goods: [{title: "Пицца", count: "2"}], 
+ //   sum: "900"); 
+    {
+   
     let data = {
         client: name + " " + phone, 
         goods: goods, 
@@ -41,18 +49,7 @@ function sendRequest(name, phone, address, goods, sum) {
         sum: sum},
     };
 
-   // let countOfGoods = goods.length;
-    
+    //let jsonData = JSON.stringify(data);
 
-   // for (let i = 0; i <= countOfGoods; i++) {
-   //     data.goods.push(goods[i].title);
-       // data.goods.push(goods[i].count);
-  //  }
-
-   // data.order.address = address;
-   // data.order.sum = name + phone + address + goods + sum;
-
-    let jsonData = JSON.stringify(data);
-
-    return jsonData;
+    return data;
 }
